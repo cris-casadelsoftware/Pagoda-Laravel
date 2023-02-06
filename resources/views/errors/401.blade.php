@@ -41,7 +41,7 @@
     <div class="row">
       <div class="col-12">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+ {{--        <nav class="navbar navbar-expand-lg blur border-radius-xl top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
           <div class="container-fluid ps-2 pe-0">
             <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="../pages/dashboard.html">
               Material Dashboard 2
@@ -69,7 +69,7 @@
                     Profile
                   </a>
                 </li>
-                                  
+
                 @endauth
                 <li class="nav-item">
                   <a class="nav-link me-2" href="{{ route('register') }}">
@@ -91,7 +91,7 @@
               </ul>
             </div>
           </div>
-        </nav>
+        </nav> --}}
         <!-- End Navbar -->
       </div>
     </div>
@@ -108,7 +108,7 @@
           </div>
         </div>
       </div>
-      <footer class="footer position-absolute bottom-2 py-2 w-100">
+      {{-- <footer class="footer position-absolute bottom-2 py-2 w-100">
         <div class="container">
           <div class="row align-items-center justify-content-lg-between">
             <div class="col-12 col-md-6 my-auto">
@@ -139,7 +139,7 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer> --}}
     </div>
   </main>
   <!--   Core JS Files   -->

@@ -17,7 +17,7 @@
                 </h6>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'user-profile' ? ' active bg-gradient-primary' : '' }} "
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'user-profile' ? ' active bg-gradient-warning' : '' }} "
                     href="{{ route('user-profile') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i style="font-size: 1.2rem;" class="fas fa-user-circle ps-2 pe-2 text-center"></i>
@@ -25,20 +25,20 @@
                     <span class="nav-link-text ms-1">User Profile</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'user-management' ? ' active bg-gradient-primary' : '' }} "
+            {{-- <li class="nav-item">
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'user-management' ? ' active bg-gradient-warning' : '' }} "
                     href="{{ route('user-management') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center"></i>
                     </div>
                     <span class="nav-link-text ms-1">User Management</span>
                 </a>
-            </li>
+            </li> --}}
             <li class="nav-item mt-3">
                 <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Pages</h6>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'dashboard' ? ' active bg-gradient-primary' : '' }} "
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'dashboard' ? ' active bg-gradient-warning' : '' }} "
                     href="{{ route('dashboard') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">dashboard</i>
@@ -46,8 +46,19 @@
                     <span class="nav-link-text ms-1">Dashboard</span>
                 </a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'tables' ? ' active bg-gradient-primary' : '' }} "
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'close.cash' ? ' active bg-gradient-warning' : '' }} "
+                    href="{{ route('close.cash') }}">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="material-icons opacity-10">table_view</i>
+                    </div>
+                    <span class="nav-link-text ms-1">Cierre de caja</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'tables' ? ' active bg-gradient-warning' : '' }} "
                     href="{{ route('tables') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">table_view</i>
@@ -56,7 +67,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'billing' ? ' active bg-gradient-primary' : '' }}  "
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'billing' ? ' active bg-gradient-warning' : '' }}  "
                     href="{{ route('billing') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">receipt_long</i>
@@ -65,7 +76,7 @@
                 </a>
             </li>
             {{-- <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'virtual-reality' ? ' active bg-gradient-primary' : '' }}  "
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'virtual-reality' ? ' active bg-gradient-warning' : '' }}  "
                     href="{{ route('virtual-reality') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">view_in_ar</i>
@@ -74,7 +85,7 @@
                 </a>
             </li> --}}
             {{-- <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'rtl' ? ' active bg-gradient-primary' : '' }}  "
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'rtl' ? ' active bg-gradient-warning' : '' }}  "
                     href="{{ route('rtl') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
@@ -83,7 +94,7 @@
                 </a>
             </li> --}}
             <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'notifications' ? ' active bg-gradient-primary' : '' }}  "
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'notifications' ? ' active bg-gradient-warning' : '' }}  "
                     href="{{ route('notifications') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">notifications</i>
@@ -95,7 +106,7 @@
                 <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages</h6>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-white {{ Route::currentRouteName() == 'profile' ? ' active bg-gradient-primary' : '' }}  "
+                <a class="nav-link text-white {{ Route::currentRouteName() == 'profile' ? ' active bg-gradient-warning' : '' }}  "
                     href="{{ route('profile') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="material-icons opacity-10">person</i>
@@ -123,13 +134,13 @@
     </div>
     {{-- <div class="sidenav-footer position-absolute w-100 bottom-0 ">
         <div class="mx-3">
-            <a class="btn bg-gradient-primary w-100" href="https://www.creative-tim.com/product/material-dashboard-laravel-livewire" target="_blank">Free Download</a>
+            <a class="btn bg-gradient-warning w-100" href="https://www.creative-tim.com/product/material-dashboard-laravel-livewire" target="_blank">Free Download</a>
         </div>
         <div class="mx-3">
-            <a class="btn bg-gradient-primary w-100" href="../../documentation/getting-started/installation.html" target="_blank">View documentation</a>
+            <a class="btn bg-gradient-warning w-100" href="../../documentation/getting-started/installation.html" target="_blank">View documentation</a>
         </div>
         <div class="mx-3">
-            <a class="btn bg-gradient-primary w-100"
+            <a class="btn bg-gradient-warning w-100"
                 href="https://www.creative-tim.com/product/material-dashboard-pro-laravel-livewire" target="_blank" type="button">Upgrade
                 to pro</a>
         </div>
